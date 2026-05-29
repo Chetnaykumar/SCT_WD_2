@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>SkillCraft Stopwatch</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="Stopwatch.css">
+
+</head>
+
+<body>
+
+  <!-- BACKGROUND -->
+
+  <div class="bg-glow glow1"></div>
+  <div class="bg-glow glow2"></div>
+
+  <!-- NAVBAR -->
+
+  <nav>
+
+    <div class="logo">
+
+      <img src="logo.jfif" alt="logo">
+
+      <span>SkillCraft Technology</span>
+
+    </div>
+
+  </nav>
+
+  <!-- MAIN -->
+
+  <section class="hero">
+
+    <div class="stopwatch-card">
+
+      <p class="mini-title">
+        MODERN TIME TRACKER
+      </p>
+
+      <h1>
+        STOPWATCH WEB APPLICATION
+      </h1>
+
+      <!-- TIME -->
+
+      <div class="time-container">
+
+        <div class="time-box">
+          <span id="minutes">00</span>
+          <small>MIN</small>
+        </div>
+
+        <div class="dots">:</div>
+
+        <div class="time-box">
+          <span id="seconds">00</span>
+          <small>SEC</small>
+        </div>
+
+        <div class="dots">:</div>
+
+        <div class="time-box">
+          <span id="milliseconds">00</span>
+          <small>MS</small>
+        </div>
+
+      </div>
+
+      <!-- BUTTONS -->
+
+      <div class="buttons">
+
+        <button id="startBtn" class="start-btn">
+          Start
+        </button>
+
+        <button id="pauseBtn" class="pause-btn">
+          Pause
+        </button>
+
+        <button id="resetBtn" class="reset-btn">
+          Reset
+        </button>
+
+        <button id="lapBtn" class="lap-btn">
+          Lap
+        </button>
+
+      </div>
+
+      <!-- LAP SECTION -->
+
+      <div class="lap-section">
+
+        <div class="lap-header">
+
+          <h2>Lap Records</h2>
+
+          <span id="lapCount">
+            0 Laps
+          </span>
+
+        </div>
+
+        <ul id="laps"></ul>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <script src="Stopwatch.js"></script>
+
+</body>
+</html>
